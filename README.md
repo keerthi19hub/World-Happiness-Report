@@ -1,113 +1,149 @@
-# World Happiness Report 2024 — Data Analytics & Power BI Dashboard
+# 🌍 World Happiness Analytics — Global Socio-Economic Well-Being & Macro Factor Analysis
 
-> **A Data Warehousing & Mining (DWM) analytical project examining global wellbeing indicators through interactive Power BI dashboards, econometric correlation analysis, and formal research documentation.**
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=78350F,D97706,FBBF24&height=220&section=header&text=World%20Happiness%20Analytics&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Global%20Socio-Economic%20Well-Being%20%26%20Macro%20Factor%20Analysis&descSize=18&descAlignY=60&descAlign=50" width="100%" alt="World Happiness Analytics Banner" />
+</p>
 
-[![Power BI](https://img.shields.io/badge/BI-Power%20BI-F2C811?logo=powerbi&logoColor=black)](https://powerbi.microsoft.com)
-[![Data Analytics](https://img.shields.io/badge/Domain-Global%20Wellbeing%20Analytics-blue)](https://github.com/keerthi19hub)
-[![DWM](https://img.shields.io/badge/Subject-Data%20Warehousing%20%26%20Mining-green)](https://github.com/keerthi19hub)
-
----
-
-## 1. Project Overview
-
-The **World Happiness Report 2024 Analysis** is a comprehensive Data Warehousing & Mining (DWM) academic research project that investigates the measurable socioeconomic and institutional drivers of population-level happiness and wellbeing across nations.
-
-Using official 2024 World Happiness Report data (157 countries), the project delivers:
-- **Multi-dimensional statistical correlation analysis** between happiness scores and economic/social indicators.
-- **Interactive Power BI dashboards** with geographic heat maps, KPI scorecards, and trend visuals.
-- **Formal DWM technical research report** documenting methodology, hypothesis tests, and findings.
+<p align="center">
+  <img src="https://img.shields.io/badge/Domain-Data%20Warehousing%20%26%20Mining-78350F?style=for-the-badge" alt="DWM" />
+  <img src="https://img.shields.io/badge/Tool-Microsoft%20Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI" />
+  <img src="https://img.shields.io/badge/Calculations-DAX%20Measures-D97706?style=for-the-badge" alt="DAX" />
+  <img src="https://img.shields.io/badge/Data-CSV%20Dataset-239120?style=for-the-badge&logo=microsoftexcel&logoColor=white" alt="CSV" />
+  <img src="https://img.shields.io/badge/Documentation-Technical%20Research%20Report-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="PDF Report" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
+</p>
 
 ---
 
-## 2. Dataset Overview
+## 📌 Table of Contents
 
-**Source:** World Happiness Report 2024 (`World-happiness-report-2024 (1).csv`)
-
-| Feature / Indicator | Description | Analytical Role |
-| :--- | :--- | :--- |
-| **Life Ladder** *(Happiness Score)* | Cantril Ladder subjective wellbeing score (0–10 scale) | Primary target variable |
-| **Log GDP per Capita** | Natural log of GDP per capita (PPP, constant 2017 USD) | Economic prosperity proxy |
-| **Social Support** | Perceived availability of social support network | Social cohesion indicator |
-| **Healthy Life Expectancy at Birth** | Life expectancy adjusted for years lived in good health | Health and welfare indicator |
-| **Freedom to Make Life Choices** | Perceptions of autonomy and personal agency | Governance quality indicator |
-| **Generosity** | Residual of donations relative to GDP | Social capital indicator |
-| **Perceptions of Corruption** | Perceived corruption in business and government | Institutional trust indicator |
-| **Positive / Negative Affect** | Prevalence of positive vs. negative emotional experiences | Psychological wellbeing |
-| `year` | Survey collection year (allows temporal trend analysis) | Temporal control variable |
+- [📖 Executive Summary](#-executive-summary)
+- [🎯 Research Objectives & Dataset Scope](#-research-objectives--dataset-scope)
+- [✨ Key Features & Macroeconomic Insights](#-key-features--macroeconomic-insights)
+- [📊 Power BI Dashboard Architecture](#-power-bi-dashboard-architecture)
+- [📐 Key DAX Measures & Formulations](#-key-dax-measures--formulations)
+- [📁 Project Structure](#-project-structure)
+- [⚙️ How to Explore the Dashboard & Reports](#️-how-to-explore-the-dashboard--reports)
+- [👩‍💻 Author & Academic Context](#-author--academic-context)
 
 ---
 
-## 3. Analytical Framework & Key Findings
+## 📖 Executive Summary
 
-### 3.1 Country Rankings (2024 Highlights)
-- **Top Performers:** Nordic nations (Finland, Denmark, Iceland, Sweden) consistently dominate rankings, driven by high social support, strong health systems, and low corruption.
-- **Regional Insights:** Sub-Saharan African nations cluster at lower scores, predominantly correlated with GDP per capita deficits and social support gaps.
-
-### 3.2 Econometric Correlations Analyzed
-| Indicator Pair | Correlation Insight |
-| :--- | :--- |
-| GDP per Capita ↔ Happiness | Strong positive correlation; diminishing returns above a threshold |
-| Social Support ↔ Happiness | Among the highest individual correlations across all indicators |
-| Freedom of Choice ↔ Happiness | Significant in both high-income and middle-income nations |
-| Perceptions of Corruption ↔ Happiness | Strong negative correlation — lower corruption = higher happiness |
-
-### 3.3 Power BI Dashboard Features
-- **Global Choropleth Map:** Country-level happiness score coloring for instant geographic pattern recognition.
-- **Indicator Scatter Plots:** Bivariate relationship visualization between happiness and each sub-index.
-- **Year-over-Year Trends:** Temporal tracking of regional average happiness across survey years.
-- **KPI Scorecards:** Top/Bottom 10 country rankings with drill-through detail cards.
+The **World Happiness Analytics & DWM Intelligence Portfolio** is a comprehensive Data Warehousing and Mining (DWM) research study evaluating the macroeconomic, institutional, and social determinants of international life satisfaction. Centered around the United Nations Sustainable Development Solutions Network dataset, the repository pairs an interactive **Microsoft Power BI Dashboard** (`.pbix`) with a formal academic research report (`Keerthi.N_World_Happiness_Report2024(DWM).pdf`) analyzing how GDP per capita, social safety nets, healthy life expectancy, personal freedom, generosity, and public corruption interact to shape national happiness scores.
 
 ---
 
-## 4. Repository Structure
+## 🎯 Research Objectives & Dataset Scope
+
+- **Dataset Source:** World Happiness Report 2024 indicators spanning 140+ countries and sovereign territories.
+- **Primary Research Question:** To what degree do economic factors (log GDP) predict self-reported life satisfaction relative to subjective institutional variables (freedom of choice, public trust, perceived corruption)?
+- **Analytical Scope:** Multidimensional correlation matrices, regional cohort clustering (Nordic, Western Europe, Sub-Saharan Africa, South Asia), and variance decomposition across the Cantril Ladder index.
+
+---
+
+## ✨ Key Features & Macroeconomic Insights
+
+- **💰 Economic Diminishing Returns:** While GDP per capita strongly correlates with happiness in developing economies, the correlation plateaus in high-income states where personal freedom and social support become dominant factors.
+- **🛡️ Social Safety Net Resilience:** Countries with high social support scores exhibit greater happiness stability during macroeconomic shocks.
+- **🏛️ Corruption Perception Impact:** Low perceived public corruption acts as a critical multiplier for civic contentment across top-ranking nations.
+- **📊 Interactive Power BI Visualizations:** Global choropleth map, regional drill-down slicers, scatter plots with regression trend lines, and KPI cards.
+
+---
+
+## 📊 Power BI Dashboard Architecture
 
 ```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                 World Happiness Power BI Analytical Schema                  │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                       │
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ Source Layer: World-happiness-report-2024.csv                               │
+│ (Ladder Score, Log GDP, Social Support, Life Exp, Freedom, Corruption)      │
+└──────────────────────────────────────┬──────────────────────────────────────┘
+                                       │
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ Transformation Layer: Power Query (M Language)                              │
+│ - Schema normalization, country code standardisation, regional grouping     │
+└──────────────────────────────────────┬──────────────────────────────────────┘
+                                       │
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ Semantic & Calculation Layer: DAX Measure Formulations                      │
+│ - Global Average Ladder Score                                               │
+│ - Regional Rank Indices                                                     │
+│ - Factor Contribution Weight %                                              │
+└──────────────────────────────────────┬──────────────────────────────────────┘
+                                       │
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ Presentation Layer: Power BI Interactive Report (`.pbix`)                   │
+│ ┌─────────────────────────┐ ┌─────────────────────────┐ ┌────────────────┐  │
+│ │ Global Choropleth Map   │ │ Factor Correlation Plot │ │ Regional Cards │  │
+│ └─────────────────────────┘ └─────────────────────────┘ └────────────────┘  │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 📐 Key DAX Measures & Formulations
+
+```dax
+// Average National Happiness Score
+Avg_Happiness_Score = AVERAGE('World-happiness-report-2024'[Ladder score])
+
+// Factor Contribution to Well-Being
+GDP_Contribution_Ratio = 
+    DIVIDE(
+        SUM('World-happiness-report-2024'[Explained by: Log GDP per capita]),
+        SUM('World-happiness-report-2024'[Ladder score]),
+        0
+    )
+```
+
+---
+
+## 📁 Project Structure
+
+```text
 World-Happiness-Report/
-├── World-happiness-report-2024 (1).csv          # Official WHR 2024 dataset (157 countries)
-├── World_Happiness_Report(DWM).pbix             # Interactive Power BI dashboard file
-├── Keerthi.N_World_Happiness_Report2024(DWM).pdf # Full DWM technical research report
-└── README.md                                     # Project documentation
+├── World_Happiness_Report(DWM).pbix              # Interactive Microsoft Power BI dashboard file
+├── Keerthi.N_World_Happiness_Report2024(DWM).pdf # Formal academic research and DWM methodology report
+├── World-happiness-report-2024 (1).csv           # Global empirical dataset
+└── README.md                                     # Production technical documentation
 ```
 
 ---
 
-## 5. Usage & Exploration
+## ⚙️ How to Explore the Dashboard & Reports
 
-### Opening the Power BI Dashboard
-1. Install **[Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/)** (free).
-2. Open `World_Happiness_Report(DWM).pbix`.
-3. Use the **Region**, **Year**, and **Country** slicers to explore filtered views.
-4. Drill through country cards for full sub-indicator breakdowns.
+### 1. View the Interactive Power BI Dashboard
+1. Install [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/) (free on Windows).
+2. Download or clone this repository:
+   ```bash
+   git clone https://github.com/keerthi19hub/World-Happiness-Report.git
+   cd World-Happiness-Report
+   ```
+3. Open `World_Happiness_Report(DWM).pbix` in Power BI Desktop to interact with regional filters and choropleth visualizations.
 
-### Reading the Research Report
-- Open `Keerthi.N_World_Happiness_Report2024(DWM).pdf` in any PDF reader.
-- The report documents the problem statement, methodology, data transformations, analytical outputs, and recommended policy implications.
-
----
-
-## 6. Technology Stack
-
-- **Data Modeling & Visualization:** Microsoft Power BI (`.pbix`), DAX
-- **Data Format:** CSV (157 countries × 9 dimensions × multiple survey years)
-- **Documentation:** Formal technical report (PDF)
+### 2. Read the Formal Academic Report
+- Open `Keerthi.N_World_Happiness_Report2024(DWM).pdf` directly in any web browser or PDF reader for the complete research methodology, statistical findings, and bibliography.
 
 ---
 
-## 7. Author & Academic Context
+## 👩‍💻 Author & Academic Context
 
-- **Author:** **Keerthi N** (*Alliance University, BCA*)
-- **Subject:** Data Warehousing & Mining (DWM)
-- **Verified Contribution:** Authored the full DWM technical research report, built the interactive Power BI data model with DAX measures, and produced all analytical visualizations.
-
----
-
-## 8. Data Attribution
-
-- **Original Dataset:** [World Happiness Report](https://worldhappiness.report/) — Gallup World Poll.
-- **This analysis** is independently developed as academic coursework at Alliance University.
+**Keerthi N**  
+- **GitHub:** [@keerthi19hub](https://github.com/keerthi19hub)  
+- **Portfolio:** [keerthi19hub.github.io](https://keerthi19hub.github.io)  
+- **Course:** Data Warehousing and Mining (DWM) · Alliance University, Bengaluru  
+- **Role:** Designed the Power BI star schema, engineered DAX measures, performed econometric correlation analysis, and authored the technical publication report.
 
 ---
 
-## 9. License
-
-Released under the [MIT License](https://opensource.org/licenses/MIT).
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=78350F,D97706,FBBF24&height=100&section=footer" width="100%" alt="Footer Banner" />
+</p>
