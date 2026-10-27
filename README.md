@@ -1,166 +1,113 @@
-# 🌍 World Happiness Report – Data Analysis
+# World Happiness Report 2024 — Data Analytics & Power BI Dashboard
 
-## 📌 Project Overview
+> **A Data Warehousing & Mining (DWM) analytical project examining global wellbeing indicators through interactive Power BI dashboards, econometric correlation analysis, and formal research documentation.**
 
-The **World Happiness Report** project analyzes happiness levels across different countries using factors such as GDP, social support, healthy life expectancy, freedom to make life choices, generosity, and perceptions of corruption.
-
-The objective of this project is to understand the major factors that influence a country's happiness score and to identify patterns and differences in happiness levels across countries.
-
-The World Happiness Report uses data from the **Gallup World Poll** along with other international datasets to compare life evaluations across countries. 
+[![Power BI](https://img.shields.io/badge/BI-Power%20BI-F2C811?logo=powerbi&logoColor=black)](https://powerbi.microsoft.com)
+[![Data Analytics](https://img.shields.io/badge/Domain-Global%20Wellbeing%20Analytics-blue)](https://github.com/keerthi19hub)
+[![DWM](https://img.shields.io/badge/Subject-Data%20Warehousing%20%26%20Mining-green)](https://github.com/keerthi19hub)
 
 ---
 
-## 🎯 Objectives
+## 1. Project Overview
 
-- Analyze happiness levels across different countries.
-- Identify the major factors affecting happiness.
-- Compare countries based on their happiness scores.
-- Understand the relationship between economic and social factors and happiness.
-- Visualize the data using charts and graphs.
-- Extract meaningful insights from the dataset.
+The **World Happiness Report 2024 Analysis** is a comprehensive Data Warehousing & Mining (DWM) academic research project that investigates the measurable socioeconomic and institutional drivers of population-level happiness and wellbeing across nations.
 
----
-
-## 📊 Dataset
-
-The dataset contains information about countries and various factors associated with their happiness levels.
-
-### Major Variables
-
-| Variable | Description |
-|----------|-------------|
-| Country | Name of the country |
-| Happiness Score | Overall happiness/life evaluation score |
-| GDP per Capita | Economic condition of the country |
-| Social Support | Availability of social and family support |
-| Healthy Life Expectancy | Expected healthy years of life |
-| Freedom to Make Life Choices | Freedom to make important life decisions |
-| Generosity | Willingness to help and donate to others |
-| Perceptions of Corruption | Perceived level of corruption |
-
-The official World Happiness Report provides country rankings and supporting data. The report's data is based largely on life evaluations collected through the Gallup World Poll. 
+Using official 2024 World Happiness Report data (157 countries), the project delivers:
+- **Multi-dimensional statistical correlation analysis** between happiness scores and economic/social indicators.
+- **Interactive Power BI dashboards** with geographic heat maps, KPI scorecards, and trend visuals.
+- **Formal DWM technical research report** documenting methodology, hypothesis tests, and findings.
 
 ---
 
-## 🛠️ Tools & Technologies
+## 2. Dataset Overview
 
-- **Python**
-- **Pandas** – Data cleaning and manipulation
-- **NumPy** – Numerical operations
-- **Matplotlib** – Data visualization
-- **Seaborn** – Statistical visualization
-- **Jupyter Notebook**
-- **GitHub**
+**Source:** World Happiness Report 2024 (`World-happiness-report-2024 (1).csv`)
 
----
-
-## 🔍 Data Analysis Process
-
-### 1. Data Collection
-The World Happiness dataset was collected from publicly available World Happiness Report data.
-
-### 2. Data Cleaning
-- Checked for missing values.
-- Removed unnecessary columns.
-- Handled duplicate or inconsistent records.
-- Prepared the dataset for analysis.
-
-### 3. Exploratory Data Analysis
-
-Different statistical and visualization techniques were used to understand:
-
-- Distribution of happiness scores.
-- Countries with the highest happiness scores.
-- Countries with lower happiness scores.
-- Relationship between GDP and happiness.
-- Relationship between social support and happiness.
-- Relationship between life expectancy and happiness.
-- Relationship between freedom and happiness.
-- Relationship between generosity and happiness.
-
-### 4. Data Visualization
-
-Charts and graphs were created to make the findings easier to understand.
-
-Examples include:
-
-- 📈 Happiness Score Distribution
-- 🌍 Happiness by Country
-- 💰 GDP vs Happiness
-- ❤️ Social Support vs Happiness
-- 🏥 Life Expectancy vs Happiness
-- 🕊️ Freedom vs Happiness
-- 🎁 Generosity vs Happiness
-- 🔥 Correlation Heatmap
+| Feature / Indicator | Description | Analytical Role |
+| :--- | :--- | :--- |
+| **Life Ladder** *(Happiness Score)* | Cantril Ladder subjective wellbeing score (0–10 scale) | Primary target variable |
+| **Log GDP per Capita** | Natural log of GDP per capita (PPP, constant 2017 USD) | Economic prosperity proxy |
+| **Social Support** | Perceived availability of social support network | Social cohesion indicator |
+| **Healthy Life Expectancy at Birth** | Life expectancy adjusted for years lived in good health | Health and welfare indicator |
+| **Freedom to Make Life Choices** | Perceptions of autonomy and personal agency | Governance quality indicator |
+| **Generosity** | Residual of donations relative to GDP | Social capital indicator |
+| **Perceptions of Corruption** | Perceived corruption in business and government | Institutional trust indicator |
+| **Positive / Negative Affect** | Prevalence of positive vs. negative emotional experiences | Psychological wellbeing |
+| `year` | Survey collection year (allows temporal trend analysis) | Temporal control variable |
 
 ---
 
-## 📈 Key Insights
+## 3. Analytical Framework & Key Findings
 
-The analysis helps identify how different economic and social factors are associated with happiness.
+### 3.1 Country Rankings (2024 Highlights)
+- **Top Performers:** Nordic nations (Finland, Denmark, Iceland, Sweden) consistently dominate rankings, driven by high social support, strong health systems, and low corruption.
+- **Regional Insights:** Sub-Saharan African nations cluster at lower scores, predominantly correlated with GDP per capita deficits and social support gaps.
 
-Some important observations include:
+### 3.2 Econometric Correlations Analyzed
+| Indicator Pair | Correlation Insight |
+| :--- | :--- |
+| GDP per Capita ↔ Happiness | Strong positive correlation; diminishing returns above a threshold |
+| Social Support ↔ Happiness | Among the highest individual correlations across all indicators |
+| Freedom of Choice ↔ Happiness | Significant in both high-income and middle-income nations |
+| Perceptions of Corruption ↔ Happiness | Strong negative correlation — lower corruption = higher happiness |
 
-- Countries with stronger social support systems generally tend to have higher life evaluations.
-- Economic conditions, represented by GDP per capita, are associated with happiness.
-- Healthy life expectancy is another important factor related to overall well-being.
-- Freedom to make life choices contributes to people's evaluation of their lives.
-- Social connections and generosity can also play an important role in well-being.
-- Happiness cannot be explained by a single factor; it is influenced by a combination of economic, social, health, and personal factors.
-
----
-
-## 📊 Sample Visualizations
-
-The project includes visualizations such as:
-
-1. Top 10 Happiest Countries
-2. Bottom 10 Countries by Happiness Score
-3. GDP vs Happiness Score
-4. Social Support vs Happiness Score
-5. Life Expectancy vs Happiness Score
-6. Freedom vs Happiness Score
-7. Correlation Heatmap
+### 3.3 Power BI Dashboard Features
+- **Global Choropleth Map:** Country-level happiness score coloring for instant geographic pattern recognition.
+- **Indicator Scatter Plots:** Bivariate relationship visualization between happiness and each sub-index.
+- **Year-over-Year Trends:** Temporal tracking of regional average happiness across survey years.
+- **KPI Scorecards:** Top/Bottom 10 country rankings with drill-through detail cards.
 
 ---
 
-## 💡 Conclusion
+## 4. Repository Structure
 
-The World Happiness Report analysis demonstrates that happiness is influenced by multiple factors rather than economic wealth alone.
-
-Economic stability, social support, health, freedom, generosity, and trust all contribute to people's overall evaluation of their lives.
-
-This project helped in understanding the process of **data cleaning, exploratory data analysis, statistical analysis, and data visualization using Python**.
-
----
-
-## 🚀 Future Scope
-
-- Perform year-wise happiness analysis.
-- Build a machine learning model to predict happiness scores.
-- Compare happiness trends between different regions.
-- Create an interactive dashboard using **Power BI or Tableau**.
-- Analyze changes in happiness rankings over time.
-- Study the relationship between happiness and other socioeconomic indicators.
+```
+World-Happiness-Report/
+├── World-happiness-report-2024 (1).csv          # Official WHR 2024 dataset (157 countries)
+├── World_Happiness_Report(DWM).pbix             # Interactive Power BI dashboard file
+├── Keerthi.N_World_Happiness_Report2024(DWM).pdf # Full DWM technical research report
+└── README.md                                     # Project documentation
+```
 
 ---
 
-## 📚 Data Source
+## 5. Usage & Exploration
 
-The data and methodology are based on the **World Happiness Report**, published by the Wellbeing Research Centre at the University of Oxford in partnership with Gallup, the UN Sustainable Development Solutions Network, and an independent editorial board.
+### Opening the Power BI Dashboard
+1. Install **[Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/)** (free).
+2. Open `World_Happiness_Report(DWM).pbix`.
+3. Use the **Region**, **Year**, and **Country** slicers to explore filtered views.
+4. Drill through country cards for full sub-indicator breakdowns.
 
-Official Website: https://worldhappiness.report/
-
-Data Sharing: https://www.worldhappiness.report/data-sharing/
-
----
-
-## 👩‍💻 Author
-
-**Keerthi Reddy**
-
-GitHub: https://github.com/keerthi19hub
+### Reading the Research Report
+- Open `Keerthi.N_World_Happiness_Report2024(DWM).pdf` in any PDF reader.
+- The report documents the problem statement, methodology, data transformations, analytical outputs, and recommended policy implications.
 
 ---
 
-⭐ If you find this project useful, consider giving this repository a star!
+## 6. Technology Stack
+
+- **Data Modeling & Visualization:** Microsoft Power BI (`.pbix`), DAX
+- **Data Format:** CSV (157 countries × 9 dimensions × multiple survey years)
+- **Documentation:** Formal technical report (PDF)
+
+---
+
+## 7. Author & Academic Context
+
+- **Author:** **Keerthi N** (*Alliance University, BCA*)
+- **Subject:** Data Warehousing & Mining (DWM)
+- **Verified Contribution:** Authored the full DWM technical research report, built the interactive Power BI data model with DAX measures, and produced all analytical visualizations.
+
+---
+
+## 8. Data Attribution
+
+- **Original Dataset:** [World Happiness Report](https://worldhappiness.report/) — Gallup World Poll.
+- **This analysis** is independently developed as academic coursework at Alliance University.
+
+---
+
+## 9. License
+
+Released under the [MIT License](https://opensource.org/licenses/MIT).
